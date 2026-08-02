@@ -15,8 +15,8 @@ jobs:
 
       - name: Extract production source
         run: |
-          unzip -o KM-Agency-Production-Clean.zip
-          rm KM-Agency-Production-Clean.zip KM-Agency-Production-UNIX.zip
+          tar -xzf KM-Agency-Production.tar.gz --strip-components=1
+          rm KM-Agency-Production.tar.gz KM-Agency-Production-Clean.zip KM-Agency-Production-UNIX.zip
 
       - name: Commit website source
         run: |
