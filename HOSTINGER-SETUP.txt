@@ -1,0 +1,28 @@
+KM Agency - Production Deployment
+
+This ZIP contains the complete Next.js production source.
+
+Hostinger setup:
+1. Open Websites > Add website > Node.js Web App.
+2. Choose Import ZIP and upload this ZIP.
+3. Framework: Next.js.
+4. Install command: npm ci
+5. Build command: npm run build
+6. Start command: npm run start
+7. Node.js version: 20 or newer.
+8. Add the environment variables listed in .env.example inside Hostinger.
+9. Replace all placeholder values with the real Supabase, admin, and SMTP values.
+10. Deploy, then connect kmagency.online to this application.
+
+Important:
+- package.json is at the ZIP root for automatic framework detection.
+- Do not upload node_modules or .next.
+- Do not publish passwords in GitHub or inside the ZIP.
+- Run both SQL files in supabase/migrations in numerical order in Supabase.
+
+After deployment, check:
+- /en
+- /ar
+- /admin/login
+- /robots.txt
+- /sitemap.xml
